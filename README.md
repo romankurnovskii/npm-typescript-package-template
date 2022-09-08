@@ -7,9 +7,6 @@
 [![NPM version][npm-image]][npm-url]
 ![npm-typescript]
 [![License][github-license]][github-license-url]
-[![Build status][github-license]][github-license-url]
-[![Build status][build-status]][build-status-url]
-[![Install size][install-size]][install-size-url]
 
 ## About
 
@@ -17,7 +14,7 @@
 ## Example
 
 
-## Installation:
+## Installation
 
 ```bash
 npm install PACKAGE_NAME
@@ -34,9 +31,8 @@ yarn add PACKAGE_NAME
 
 ## API
 
-- **init(code?: string) => Promise<boolean>**
-CognitoObserver.init: (code?: string | undefined) => Promise<boolean>
-- **isActive()**
+- **func(arg?: string) => Promise<boolean>**
+- **func2()**
 
 
 [package-name]: PACKAGE_NAME

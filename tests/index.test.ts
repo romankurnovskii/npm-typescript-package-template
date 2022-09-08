@@ -1,5 +1,3 @@
-import 'jest-canvas-mock';
-
 import { hello } from '../src';
 
 describe('Init test', () => {
