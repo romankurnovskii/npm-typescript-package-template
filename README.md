@@ -17,7 +17,7 @@
 ## Example
 
 
-## Installation:
+## Installation
 
 ```bash
 npm install PACKAGE_NAME
