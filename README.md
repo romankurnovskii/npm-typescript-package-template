@@ -1,4 +1,4 @@
-# PACKAGE_NAME
+<h1 align="center">PACKAGE_NAME<br>SHORT_DESCRIPTION</h1>
 
 <p align="center">
   <img src="https://github.com/romankurnovskii/PACKAGE_NAME/raw/main/img/icon.png" alt="PACKAGE_NAME">
@@ -8,31 +8,29 @@
 ![npm-typescript]
 [![License][github-license]][github-license-url]
 
-## About
+
+## 🌟 Features
 
 
-## Example
+## 📖 Usage
 
 
-## Installation
+## 🛠️ Installation
 
-```bash
+```sh
 npm install PACKAGE_NAME
 ```
 
 or
 
-```bash
+```sh
 yarn add PACKAGE_NAME
 ```
-
-## Usage
-
 
 ## API
 
 - **func(arg?: string) => Promise<boolean>**
-- **func2()**
+- **func2() => void**
 
 
 [package-name]: PACKAGE_NAME
