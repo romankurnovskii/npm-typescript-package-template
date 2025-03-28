@@ -11,7 +11,7 @@
     "strict": true,
     "noUnusedLocals": true,
     "allowJs": true, // Allow JavaScript files to be imported inside your project, instead of just .ts and .tsx files.
-    "checkJs": true, // When enabled then errors are reported in JS files. Equivalent of including // @ts-check
+    "checkJs": true // When enabled then errors are reported in JS files. Equivalent of including // @ts-check
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist"]

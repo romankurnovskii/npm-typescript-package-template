@@ -10,7 +10,7 @@ export default [
         languageOptions: {
             parser: typescriptParser,
             parserOptions: {
-                ecmaVersion: 2021,
+                ecmaVersion: 2022,
                 sourceType: 'module',
             },
             globals: {
