@@ -8,12 +8,9 @@
 ![npm-typescript]
 [![License][github-license]][github-license-url]
 
-
 ## 🌟 Features
 
-
 ## 📖 Usage
-
 
 ## 🛠️ Installation
 
@@ -32,8 +29,8 @@ yarn add PACKAGE_NAME
 - **func(arg?: string) => Promise<boolean>**
 - **func2() => void**
 
-
 [package-name]: PACKAGE_NAME
+
 [npm-url]: https://www.npmjs.com/package/[package-name]
 [npm-image]: https://img.shields.io/npm/v/PACKAGE_NAME
 [github-license]: https://img.shields.io/github/license/romankurnovskii/PACKAGE_NAME

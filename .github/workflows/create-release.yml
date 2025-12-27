@@ -38,4 +38,3 @@ jobs:
           name: ${{ env.VERSION }}
           tag_name: ${{ env.VERSION }}
           generate_release_notes: true
-

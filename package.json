@@ -42,7 +42,14 @@
     "test": "jest --config jestconfig.json",
     "test:watch": "jest --config jestconfig.json --watch",
     "test:coverage": "jest --config jestconfig.json --coverage",
+    "prepare": "husky",
     "prepublishOnly": "npm run type-check && npm run build && npm test && npm run format:check && npm run lint"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   },
   "files": [
     "dist",
@@ -50,21 +57,23 @@
     "README.md"
   ],
   "dependencies": {
-    "commander": "^12.1.0"
+    "commander": "^12.1.0",
+    "eslint-plugin-prettier": "^5.5.4"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
-    "@types/node": "^22.10.2",
-    "@typescript-eslint/eslint-plugin": "^8.18.2",
-    "@typescript-eslint/parser": "^8.18.2",
-    "eslint": "^9.18.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^6.0.0",
+    "@types/node": "^22.19.3",
+    "@typescript-eslint/eslint-plugin": "^8.50.1",
+    "@typescript-eslint/parser": "^8.50.1",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^9.1.2",
+    "husky": "^9.1.7",
     "jest": "^30.2.0",
-    "prettier": "^3.4.2",
-    "ts-jest": "^29.2.5",
-    "tsx": "^4.19.2",
-    "typescript": "^5.7.2"
+    "lint-staged": "^15.5.2",
+    "prettier": "^3.7.4",
+    "ts-jest": "^29.4.6",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
   },
   "engines": {
     "node": ">=22.0.0"
