@@ -1,18 +1,25 @@
 {
   "compilerOptions": {
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "declaration": true,
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
+    "target": "ES2024",
+    "lib": ["ES2024"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "outDir": "dist",
+    "rootDir": "src",
+    "declaration": true,
+    "declarationMap": true,
     "sourceMap": true,
     "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
     "noUnusedLocals": true,
-    "allowJs": true, // Allow JavaScript files to be imported inside your project, instead of just .ts and .tsx files.
-    "checkJs": true // When enabled then errors are reported in JS files. Equivalent of including // @ts-check
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "verbatimModuleSyntax": true
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "dist", "tests"]
 }

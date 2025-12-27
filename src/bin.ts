@@ -1,25 +1,21 @@
 #!/usr/bin/env node
-import { ArgumentParser } from 'argparse';
-import { hello } from './index.js'; // https://nodejs.org/api/esm.html#esm_mandatory_file_extensions
+import { Command } from 'commander';
+import { hello } from './index.js';
 
-const parser = new ArgumentParser({
-  description: 'DESCRIPTION',
-});
+const program = new Command();
 
-parser.add_argument('-d', '--dir', {
-  help: 'Directory to search for Python files',
-  nargs: '*',
-  default: ['.'],
-});
+program
+  .name('package-name')
+  .description('DESCRIPTION')
+  .version('1.0.0');
 
-parser.add_argument('--dest', {
-  help: 'Destination file to save output',
-  default: null,
-});
+program
+  .option('-d, --dir <dirs...>', 'Directory to search for files', ['.'])
+  .option('--dest <file>', 'Destination file to save output')
+  .action((options) => {
+    const { dir, dest } = options;
+    // hello(dir, dest);
+    hello();
+  });
 
-// const args = parser.parse_args();
-// const dirs = args.dir;
-// const outputFile = args.dest;
-
-// hello(dirs, outputFile);
-hello();
+program.parse();

@@ -20,17 +20,29 @@
     "url": "https://romankurnovskii.com"
   },
   "type": "module",
-  "main": "dist/index.js",
-  "bin": "dist/bin.js",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "package-name": "./dist/bin.js"
+  },
   "scripts": {
-    "start": "ts-node-esm src/bin.ts",
+    "start": "tsx src/bin.ts",
     "build": "tsc",
-    "lint": "eslint \"{**/*,*}.{ts,tsx}\"",
-    "lint:fix": "eslint --fix",
-    "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint \"{src,tests,example/src}/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint --fix \"{src,tests,example/src}/**/*.{ts,tsx}\"",
+    "format": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
+    "format:check": "prettier --check \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
     "test": "jest --config jestconfig.json",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm run build && npm test && npm run prettier && npm run lint"
+    "test:watch": "jest --config jestconfig.json --watch",
+    "test:coverage": "jest --config jestconfig.json --coverage",
+    "prepublishOnly": "npm run type-check && npm run build && npm test && npm run format:check && npm run lint"
   },
   "files": [
     "dist",
@@ -38,25 +50,23 @@
     "README.md"
   ],
   "dependencies": {
-    "argparse": "^2.0.1"
+    "commander": "^12.1.0"
   },
   "devDependencies": {
-    "@types/argparse": "^2.0.17",
     "@types/jest": "^30.0.0",
-    "@types/node": "^25.0.2",
-    "@typescript-eslint/eslint-plugin": "^8.17.0",
-    "@typescript-eslint/parser": "^8.17.0",
-    "eslint": "^9.16.0",
-    "eslint-config-prettier": "^10.1.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "jest": "^30.0.4",
+    "@types/node": "^22.10.2",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^6.0.0",
+    "jest": "^30.2.0",
     "prettier": "^3.4.2",
     "ts-jest": "^29.2.5",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=22.0.0"
   }
 }
