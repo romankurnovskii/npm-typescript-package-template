@@ -1,7 +1,7 @@
 name: EnvironmentsTest
 on:
-  - push
-  - pull_request
+  push:
+  pull_request:
 jobs:
   test:
     name: Node.js ${{ matrix.node-version }}
@@ -14,6 +14,7 @@ jobs:
           - 23
           - 22
           - 20
+    steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v4
         with:
