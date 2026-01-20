@@ -4,5 +4,5 @@ export type UserDataType = {
 };
 
 export const hello = () => {
-  return { result: true };
+  return {result: true};
 };
