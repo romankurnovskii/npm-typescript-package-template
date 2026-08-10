@@ -29,7 +29,7 @@
     "@changesets/changelog-github": "^0.7.0",
     "@changesets/cli": "^2.31.0",
     "@types/node": "^25.9.3",
-    "@typescript-eslint/eslint-plugin": "^8.64.0",
+    "@typescript-eslint/eslint-plugin": "^8.66.0",
     "@typescript-eslint/parser": "^8.61.1",
     "eslint": "^10.7.0",
     "eslint-config-prettier": "^10.1.8",
