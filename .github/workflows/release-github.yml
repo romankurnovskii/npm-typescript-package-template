@@ -31,7 +31,6 @@ jobs:
         id: changesets
         uses: changesets/action@v2
         with:
-          publish: npm run release
+          publish: echo 'skipping npm publish'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
