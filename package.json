@@ -41,15 +41,9 @@
     },
     "./package.json": "./package.json"
   },
-  "files": [
-    "dist",
-    "LICENSE",
-    "README.md"
-  ],
+  "files": ["dist", "LICENSE", "README.md"],
   "lint-staged": {
-    "*.{ts,tsx,js,jsx}": [
-      "biome check --write"
-    ]
+    "*.{ts,tsx,js,jsx}": ["biome check --write"]
   },
   "engines": {
     "node": ">=22.0.0"
@@ -62,9 +56,7 @@
   "bugs": {
     "url": "https://github.com/romankurnovskii/PACKAGE_NAME/issues"
   },
-  "keywords": [
-    "npm-module"
-  ],
+  "keywords": ["npm-module"],
   "author": {
     "name": "Roman Kurnovskii",
     "email": "r.kurnovskii@gmail.com",
