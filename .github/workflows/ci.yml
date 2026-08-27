@@ -26,10 +26,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - run: corepack enable
-      - run: pnpm approve-builds esbuild
-      - run: pnpm install
-      - run: pnpm run lint
-      - run: pnpm run type-check
-      - run: pnpm run test
-      - run: pnpm run build
+      - run: npm install
+      - run: npm run lint
+      - run: npm run type-check
+      - run: npm run test
+      - run: npm run build

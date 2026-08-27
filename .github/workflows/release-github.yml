@@ -26,17 +26,11 @@ jobs:
         with:
           node-version: 22
 
-      - name: Enable Corepack
-        run: corepack enable
-
-      - name: Approve esbuild build scripts
-        run: pnpm approve-builds esbuild
-
       - name: Install Dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Test
-        run: pnpm run test
+        run: npm run test
 
       - name: Create Release Changesets
         id: changesets
