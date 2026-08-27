@@ -29,9 +29,9 @@
 
 ## 🚀 Features
 
--   **Feature 1**: Description.
--   **Feature 2**: Description.
--   **Feature 3**: Description.
+- **Feature 1**: Description.
+- **Feature 2**: Description.
+- **Feature 3**: Description.
 
 ## 🛠️ Installation
 
@@ -44,7 +44,7 @@ npm install PACKAGE_NAME
 ### Basic Example
 
 ```typescript
-import { hello } from 'PACKAGE_NAME';
+import { hello } from "PACKAGE_NAME";
 
 const result = hello();
 console.log(result);
@@ -70,12 +70,12 @@ npm install
 
 ### Scripts
 
--   `npm run dev`: Watch mode for development.
--   `npm run build`: Build for production.
--   `npm run test`: Run tests with Vitest.
--   `npm run lint`: Lint code with ESLint.
--   `npm run format`: Format code with Prettier.
--   `npm run release`: Create a release with Changesets.
+- `npm run dev`: Watch mode for development.
+- `npm run build`: Build for production.
+- `npm run test`: Run tests with Vitest.
+- `npm run lint`: Lint code with ESLint.
+- `npm run format`: Format code with Prettier.
+- `npm run release`: Create a release with Changesets.
 
 ## 🤝 Contributing
 

@@ -2,7 +2,7 @@ name: Combine PR
 
 on:
   schedule:
-    - cron: '0 9 * * 1' # Monday at 09:00 UTC
+    - cron: "0 9 * * 1" # Monday at 09:00 UTC
   workflow_dispatch: # allows to manually trigger the workflow
 
 # The minimum permissions required to run this Action
