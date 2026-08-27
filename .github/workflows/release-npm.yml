@@ -26,6 +26,9 @@ jobs:
         with:
           version: 9
 
+      - name: Approve esbuild build scripts
+        run: pnpm approve-builds esbuild
+
       - name: Install dependencies
         run: pnpm install
 
