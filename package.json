@@ -28,7 +28,7 @@
     "@changesets/cli": "3.0.1",
     "@types/node": "26.4.0",
     "husky": "^9.1.7",
-    "lint-staged": "^17.4.1",
+    "lint-staged": "^17.5.0",
     "tsx": "4.23.12",
     "typescript": "7.0.2",
     "vitest": "4.1.11"
@@ -40,9 +40,15 @@
     },
     "./package.json": "./package.json"
   },
-  "files": ["dist", "LICENSE", "README.md"],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "lint-staged": {
-    "*.{ts,tsx,js,jsx}": ["biome check --write"]
+    "*.{ts,tsx,js,jsx}": [
+      "biome check --write"
+    ]
   },
   "engines": {
     "node": ">=22.0.0"
@@ -55,7 +61,9 @@
   "bugs": {
     "url": "https://github.com/romankurnovskii/PACKAGE_NAME/issues"
   },
-  "keywords": ["npm-module"],
+  "keywords": [
+    "npm-module"
+  ],
   "author": {
     "name": "Roman Kurnovskii",
     "email": "r.kurnovskii@gmail.com",
