@@ -1,5 +1,5 @@
 export type UserDataType = {
-  [key: string]: any
+  [key: string]: unknown
   exp: number
 }
 
