@@ -35,5 +35,3 @@ jobs:
       - name: Create Release Changesets
         id: changesets
         uses: changesets/action@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
