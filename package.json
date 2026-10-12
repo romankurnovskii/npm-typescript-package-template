@@ -30,7 +30,7 @@
     "@types/node": "26.6.4",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
-    "tsx": "4.23.12",
+    "tsx": "4.23.15",
     "typescript": "7.0.2",
     "vite": "^8.2.2",
     "vitest": "5.0.1"
