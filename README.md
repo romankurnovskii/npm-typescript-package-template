@@ -44,10 +44,10 @@ npm install PACKAGE_NAME
 ### Basic Example
 
 ```typescript
-import { hello } from "PACKAGE_NAME";
+import { hello } from 'PACKAGE_NAME'
 
-const result = hello();
-console.log(result);
+const result = hello()
+console.log(result)
 ```
 
 ### CLI Usage
@@ -90,15 +90,11 @@ MIT © [Roman Kurnovskii](https://romankurnovskii.com)
 [package-name]: PACKAGE_NAME
 [username]: USERNAME
 [repo-name]: REPO_NAME
-
 [npm-url]: https://www.npmjs.com/package/[package-name]
 [npm-version-image]: https://img.shields.io/npm/v/[package-name]?style=flat-square&color=blue
-
 [license-url]: https://github.com/[username]/[repo-name]/blob/main/LICENSE
 [license-image]: https://img.shields.io/github/license/[username]/[repo-name]?style=flat-square&color=green
-
 [ci-url]: https://github.com/[username]/[repo-name]/actions
 [ci-image]: https://img.shields.io/github/actions/workflow/status/[username]/[repo-name]/ci.yml?style=flat-square&label=CI
-
 [ts-url]: https://www.typescriptlang.org/
 [ts-image]: https://img.shields.io/badge/TypeScript-5.x-blue?style=flat-square&logo=typescript
